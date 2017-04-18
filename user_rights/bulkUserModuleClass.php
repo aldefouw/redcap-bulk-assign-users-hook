@@ -39,7 +39,7 @@ class bulkUserModuleClass {
     }
 
     function getHTMLOutput(){
-        if( is_file( $this->getAddBulkUsersPath() ) ) {
+        if( is_file( $this->getAddBulkUsersPath() ) && strlen($this->getProjectRoles()) ) {
 
             //Output buffer will fetch the output of this PHP file
             ob_start();
